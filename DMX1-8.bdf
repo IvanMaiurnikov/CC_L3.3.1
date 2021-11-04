@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 368 112 536 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "D" (rect 5 0 14 12)(font "Arial" ))
+	(text "D" (rect 5 0 13 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 360 160 528 176)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A[2..0]" (rect 5 0 39 12)(font "Arial" ))
+	(text "A[2..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -540,6 +540,38 @@ applicable agreement for further details.
 		(line (pt 18 67)(pt 18 13))
 		(line (pt 34 53)(pt 18 53))
 		(arc (pt 34 52)(pt 34 28)(rect 22 28 47 53))
+	)
+)
+(symbol
+	(rect 568 96 632 144)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst11" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
 (connector
@@ -1089,16 +1121,6 @@ applicable agreement for further details.
 	(pt 744 120)
 )
 (connector
-	(pt 536 120)
-	(pt 744 120)
-	(color 0 170 0)
-)
-(connector
-	(pt 744 120)
-	(pt 832 120)
-	(color 0 170 0)
-)
-(connector
 	(text "Q[7..0]" (rect 866 88 900 100)(font "Arial" ))
 	(pt 864 104)
 	(pt 1088 104)
@@ -1163,6 +1185,34 @@ applicable agreement for further details.
 	(pt 712 328)
 	(color 0 0 255)
 )
+(connector
+	(pt 536 120)
+	(pt 560 120)
+)
+(connector
+	(pt 568 112)
+	(pt 560 112)
+)
+(connector
+	(pt 560 128)
+	(pt 568 128)
+)
+(connector
+	(pt 560 112)
+	(pt 560 120)
+)
+(connector
+	(pt 560 120)
+	(pt 560 128)
+)
+(connector
+	(pt 632 120)
+	(pt 744 120)
+)
+(connector
+	(pt 744 120)
+	(pt 832 120)
+)
 (junction (pt 568 184))
 (junction (pt 568 240))
 (junction (pt 568 296))
@@ -1206,4 +1256,5 @@ applicable agreement for further details.
 (junction (pt 832 400))
 (junction (pt 832 272))
 (junction (pt 1088 104))
+(junction (pt 560 120))
 (junction (pt 744 120))
